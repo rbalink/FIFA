@@ -18,7 +18,7 @@ public class FIFAManaging {
 	}
 
 	/**
-	 * menü auswahl für den User
+	 * menu auswahl fuer den User
 	 */
 	public static int operator() {
 		while (true) {
@@ -49,7 +49,7 @@ public class FIFAManaging {
 					break;
 				case 3:
 					System.out.println("[1]: Staerken Veraenderung von einem Spieler sehen");
-					System.out.println("[2]: Spieler im Kader mit größer Staerken Veraenderung");
+					System.out.println("[2]: Spieler im Kader mit groesster Staerken Veraenderung");
 					Scanner temp6 = new Scanner(System.in);
 					int umenu3 = temp6.nextInt();
 					switch (umenu3) {
@@ -60,16 +60,16 @@ public class FIFAManaging {
 						staerkeTeam();
 						break;
 					default:
-						System.out.println("+ + + + + Ungültige Eingabe + + + + + ");
+						System.out.println("+ + + + + Ungueltige Eingabe + + + + + ");
 
 					}
 					break;
 				default:
-					System.out.println("+ + + + + Ungültige Eingabe + + + + + ");
+					System.out.println("+ + + + + Ungueltige Eingabe + + + + + ");
 				}
 				break;
 			case 3:
-				System.out.println("[1]: Spieler hinzufügen");
+				System.out.println("[1]: Spieler hinzufuegen");
 				System.out.println("[2]: Staerke bearbeiten");
 				System.out.println("[3]: Alter updaten");
 				Scanner temp6 = new Scanner(System.in);
@@ -85,13 +85,13 @@ public class FIFAManaging {
 					update();
 					break;
 				default:
-					System.out.println("+ + + + + Ungültige Eingabe + + + + + ");
+					System.out.println("+ + + + + Ungueltige Eingabe + + + + + ");
 				}
 				break;
 			case 4:
 				return 0;
 			default:
-				System.out.println("+ + + + + Ungültige Eingabe + + + + + ");
+				System.out.println("+ + + + + Ungueltige Eingabe + + + + + ");
 			}
 
 		}
@@ -134,7 +134,7 @@ public class FIFAManaging {
 	 * sucht die Fussballerliste nach eingegebenem Namen vom Usernamen durch
 	 */
 	public static Fussballspieler suchen() {
-		System.out.println("Wie heißt der Spieler?:");
+		System.out.println("Wie heisst der Spieler?:");
 		Scanner tmpor = new Scanner(System.in);
 		String search = tmpor.nextLine();
 		int count = 0;
@@ -156,7 +156,7 @@ public class FIFAManaging {
 	 * 
 	 * @throws FileNotFoundException
 	 *             liest von fifahistory.txt die Strings ein splittet die
-	 *             Strings bei dem Schlüsselwort ende neue Fussballspieler wird
+	 *             Strings bei dem Schluesselwort ende neue Fussballspieler wird
 	 *             erstellt und in die liste gespeichert
 	 */
 	public static void einlesen() {
@@ -235,7 +235,7 @@ public class FIFAManaging {
 		Scanner tempo2 = new Scanner(System.in);
 		int neu = tempo2.nextInt();
 		if (neu <= 0 || neu >= 100) {
-			System.out.println("Ungültiger Wert");
+			System.out.println("Ungueltiger Wert");
 			return;
 		}
 		i.setDurchschnitt(neu);
@@ -253,7 +253,7 @@ public class FIFAManaging {
 	}
 
 	/**
-	 * zeigt den Spieler mit der größten (postiven) Veraenderung an
+	 * zeigt den Spieler mit der groessten (postiven) Veraenderung an
 	 */
 	private static void staerkeTeam() {
 		int diff = 0;
@@ -267,7 +267,7 @@ public class FIFAManaging {
 			}
 		}
 		System.out.println(
-				"Der Spieler mit der größten Verbesserung ist " + o + " mit einer Verbesserung von " + diff + ".");
+				"Der Spieler mit der groessten Verbesserung ist " + o + " mit einer Verbesserung von " + diff + ".");
 
 	}
 
