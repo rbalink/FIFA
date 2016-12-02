@@ -24,6 +24,7 @@ Marktwertverluste
 Ablöse
 ---Kaufsumme
 größte Kaufsumme
+
 ---Verkaufssumme
 größte Verkaufssumme
 wertwollvster Ertrag (niedrigste Kaufsumme/größte Verkaufssumme)
@@ -32,7 +33,10 @@ wertwollvster Ertrag (niedrigste Kaufsumme/größte Verkaufssumme)
 
 Saison
 ---Jahr ankunft
+
 ---Jahr abgang
+(Noch) Im Verein
+
 Jahre im Team
 Liste von Abgängen im gleichen Jahr (Transferliste)
 
@@ -40,17 +44,28 @@ Liste von Abgängen im gleichen Jahr (Transferliste)
 Leistungsdaten
 ---Spiele
 Meisten Spiele 
+
 ---Tore
 Meisten Tore
 Torquote auflisten (beste/schlechteste)
+
 ---Vorlagen
 Meisten Vorlagen
 Vorlagen Quote
+
 ---Gelbe Karten
 Meisten Gelben Karten
 Quote pro Spiel
+
 ---Rote Karten
 Meisten Roten Karten
 Quote pro Spiel
+
 ---Anti Fair Play Quote
 Rote + Gelbe Karten Ranking
+
+
+
+
+--Wertvollste Aufstellung nach aktuellem Marktwert 
+und aktuell im Verein
