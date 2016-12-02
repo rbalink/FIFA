@@ -26,9 +26,7 @@ public class Fussballspieler {
 		this.durchschnitt = durchschnitt;
 		this.anfangsdurch = anfangsdurch;
 	}
-	public void setDurchschnitt(int durchschnitt){
-		this.durchschnitt = durchschnitt;
-	}
+
 	public void updateAlter(){
 		this.alter = alter+1;
 	}
@@ -54,9 +52,12 @@ public class Fussballspieler {
 	public void setNachname(String nachname){
 		this.nachname = nachname;
 	}
+	public void setDurchschnitt(int durchschnitt){
+		this.durchschnitt = durchschnitt;
+	}
 	
 	/**
-	 * toString Methode die am Ende für die txt file gedacht ist
+	 * toString Methode die am Ende fuer die txt file gedacht ist
 	 */
 	public String toString(){
 		return nachname+" "+alter+" "+durchschnitt+" "+anfangsdurch+" ende";
@@ -67,9 +68,9 @@ public class Fussballspieler {
 	 */
 	public String anzeigeString(){
 		if(nachname.length()<=7){
-			return "| Name: "+nachname+"\t        | Alter:"+alter+" | Stärke: "+durchschnitt;
+			return "| Name: "+nachname+"\t        | Alter:"+alter+" | Staerke: "+durchschnitt;
 		}else{
-			return "| Name: "+nachname+"\t| Alter:"+alter+" | Stärke: "+durchschnitt;
+			return "| Name: "+nachname+"\t| Alter:"+alter+" | Staerke: "+durchschnitt;
 		}
 
 	}

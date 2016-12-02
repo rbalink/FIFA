@@ -37,7 +37,7 @@ public class FIFAManaging {
 			case 2:
 				System.out.println("[1]: Alle Spieler anzeigen");
 				System.out.println("[2]: Spieler suchen");
-				System.out.println("[3]: Stärken Statistik");
+				System.out.println("[3]: Staerken Statistik");
 				Scanner temp5 = new Scanner(System.in);
 				int umenu = temp5.nextInt();
 				switch (umenu) {
@@ -48,8 +48,8 @@ public class FIFAManaging {
 					suchen();
 					break;
 				case 3:
-					System.out.println("[1]: Stärken Veränderung von einem Spieler sehen");
-					System.out.println("[2]: Spieler im Kader mit größer Stärken Veränderung");
+					System.out.println("[1]: Staerken Veraenderung von einem Spieler sehen");
+					System.out.println("[2]: Spieler im Kader mit größer Staerken Veraenderung");
 					Scanner temp6 = new Scanner(System.in);
 					int umenu3 = temp6.nextInt();
 					switch (umenu3) {
@@ -70,7 +70,7 @@ public class FIFAManaging {
 				break;
 			case 3:
 				System.out.println("[1]: Spieler hinzufügen");
-				System.out.println("[2]: Stärke bearbeiten");
+				System.out.println("[2]: Staerke bearbeiten");
 				System.out.println("[3]: Alter updaten");
 				Scanner temp6 = new Scanner(System.in);
 				int umenu2 = temp6.nextInt();
@@ -113,7 +113,7 @@ public class FIFAManaging {
 		System.out.println("Alter:");
 		Scanner tmp2 = new Scanner(System.in);
 		int alter = tmp2.nextInt();
-		System.out.println("Stärke:");
+		System.out.println("Staerke:");
 		Scanner tmp3 = new Scanner(System.in);
 		int durchschnitt = tmp3.nextInt();
 		Fussballspieler neu = new Fussballspieler(name, alter, durchschnitt);
@@ -222,16 +222,16 @@ public class FIFAManaging {
 		}
 	}
 
-	// NAMEN ÄNDERN ! ZU VERWIRREND
+	// NAMEN aeNDERN ! ZU VERWIRREND
 	/**
-	 * Verändert die Stärke des Spielers
+	 * Veraendert die Staerke des Spielers
 	 */
 	public static void bearbeiten() {
 		Fussballspieler i = suchen();
 		if (i == null) {
 			return;
 		}
-		System.out.println("Neue Stärke:");
+		System.out.println("Neue Staerke:");
 		Scanner tempo2 = new Scanner(System.in);
 		int neu = tempo2.nextInt();
 		if (neu <= 0 || neu >= 100) {
@@ -253,7 +253,7 @@ public class FIFAManaging {
 	}
 
 	/**
-	 * zeigt den Spieler mit der größten (postiven) Veränderung an
+	 * zeigt den Spieler mit der größten (postiven) Veraenderung an
 	 */
 	private static void staerkeTeam() {
 		int diff = 0;
@@ -272,7 +272,7 @@ public class FIFAManaging {
 	}
 
 	/**
-	 * Sucht einen von dir genannten Spieler und vergleicht Anfangsstärke mit
+	 * Sucht einen von dir genannten Spieler und vergleicht Anfangsstaerke mit
 	 * aktueller
 	 */
 	private static void staerkeSpieler() {
@@ -281,7 +281,7 @@ public class FIFAManaging {
 			return;
 		}
 		int differenz = b.getDurchschnitt() - b.getAnfangsdurch();
-		System.out.print("Stärke von " + b.getNachname());
+		System.out.print("Staerke von " + b.getNachname());
 		String plural;
 		if (differenz == 1 || differenz == -1) {
 			plural = "Punkt";
@@ -292,7 +292,7 @@ public class FIFAManaging {
 			System.out.println(" hat sich verbessert um " + differenz + " " + plural + ". [Anfang "
 					+ b.getAnfangsdurch() + "|Heute " + b.getDurchschnitt() + "]");
 		} else if (differenz == 0) {
-			System.out.println(" hat sich nicht verändert. [Anfang/Heute " + b.getDurchschnitt() + "]");
+			System.out.println(" hat sich nicht veraendert. [Anfang/Heute " + b.getDurchschnitt() + "]");
 		} else {
 			System.out.println(" hat sich verschlechtert um " + differenz + " " + plural + ". [Anfang "
 					+ b.getAnfangsdurch() + "|Heute " + b.getDurchschnitt() + "]");
